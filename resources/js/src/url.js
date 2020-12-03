@@ -17,8 +17,8 @@
 
 const api = "http://datacenterftzkepri.com/panel";
 const base = "panel";
-const web = "datacenterftzkepri.com/panel"
-const publicData = "datacenterftzkepri.com/panel/public";
+const web = "http://datacenterftzkepri.com/panel"
+const publicData = "http://datacenterftzkepri.com/panel/public";
 const assets = "http://appkepri.com/Resources/perusahaan";
 
 // const api = "https://dpmptsp.kepriprov.go.id/siJempol";
