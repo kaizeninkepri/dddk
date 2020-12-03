@@ -137,8 +137,8 @@ export default {
         .then((r) => {
           this.isLoading = false;
           this.$vs.loading.close("#button-with-loading > .con-vs-loading");
-          r.data == "login"
-            ? (this.$router.push({ path: "/" }), this.notification())
+          r.data.nama == "login"
+            ? (this.$router.push({ path: "/dashboard", query : {v: r.data.id }}), this.notification())
             : (this.active = true);
         });
     },

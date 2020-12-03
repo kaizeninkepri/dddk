@@ -20,7 +20,10 @@ class ApplicationController extends Controller
         // return $credentials;
         if (Auth::attempt($credentials)) {
             // Authentication passed...
-            return "login";
+            return array(
+                "nama" => "login",
+                "id" => Auth::user()->user_id
+            );
         }
         return "salah";
     }
