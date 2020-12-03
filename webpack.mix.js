@@ -44,11 +44,11 @@ if (mix.inProduction()) {
     mix.version();
     mix.webpackConfig({
         output: {
-            publicPath: '/project/starter-kit/',
+            publicPath: '/panel/',
             chunkFilename: 'js/chunks/[name].js',
         }
     });
-    mix.setResourceRoot("/project/starter-kit/public/");
+    mix.setResourceRoot("/panel/public/");
 }
 else{
     mix.webpackConfig({

@@ -15,7 +15,7 @@ Vue.use(Router)
 
 const router = new Router({
     mode: 'history',
-    base: 'project/starter-kit',
+    base: 'panel',
     scrollBehavior () {
         return { x: 0, y: 0 }
     },

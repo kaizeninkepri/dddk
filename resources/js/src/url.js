@@ -2,11 +2,11 @@
 // const base = "";
 // const web = "http://panel.inilahkepri.id";
 
-const api = "http://localhost/project/starter-kit/api";
-const base = "project/starter-kit";
-const web = "http://localhost/project/starter-kit";
-const assets = "http://localhost/project/starter-kit";
-const publicData = "http://localhost/project/starter-kit";
+// const api = "http://localhost/project/starter-kit/api";
+// const base = "project/starter-kit";
+// const web = "http://localhost/project/starter-kit";
+// const assets = "http://localhost/project/starter-kit";
+// const publicData = "http://localhost/project/starter-kit";
 
 // const api = "http://192.168.1.98/siJempol";
 // const base = "siJempol";
@@ -15,11 +15,11 @@ const publicData = "http://localhost/project/starter-kit";
 // const assets = "http://192.168.1.98/Resources/perusahaan";
 
 
-// const api = "http://appkepri.com/siJempol";
-// const base = "siJempol";
-// const web = "http://appkepri.com/siJempol"
-// const publicData = "http://appkepri.com/siJempol/public";
-// const assets = "http://appkepri.com/Resources/perusahaan";
+const api = "http://datacenterftzkepri.com/panel";
+const base = "panel";
+const web = "datacenterftzkepri.com/panel"
+const publicData = "datacenterftzkepri.com/panel/public";
+const assets = "http://appkepri.com/Resources/perusahaan";
 
 // const api = "https://dpmptsp.kepriprov.go.id/siJempol";
 // const base = "";
