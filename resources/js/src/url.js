@@ -15,7 +15,7 @@
 // const assets = "http://192.168.1.98/Resources/perusahaan";
 
 
-const api = "http://datacenterftzkepri.com/panel";
+const api = "http://datacenterftzkepri.com/panel/api";
 const base = "panel";
 const web = "http://datacenterftzkepri.com/panel"
 const publicData = "http://datacenterftzkepri.com/panel/public";
