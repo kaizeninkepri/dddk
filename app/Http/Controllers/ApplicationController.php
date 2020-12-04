@@ -32,4 +32,53 @@ class ApplicationController extends Controller
         Auth::logout();
         return redirect('pages/login');
     }
+
+    public function menu(Request $r)
+    {
+        $data[] = array(
+            "url" => "/",
+            "name" => "Dashboard",
+            "slug" => "home",
+            "icon" => "HomeIcon",
+        );
+
+        $data[] = array(
+            "url" => "users",
+            "name" => "Profile",
+            "slug" => "profile",
+            "icon" => "UsersIcon",
+        );
+
+        $data[] = array(
+            "url" => "/distrik/detail?v=" . Auth::user()->user_id . "&t=1",
+            "name" => "Investasi",
+            "slug" => "investasi",
+            "icon" => "TrendingUpIcon",
+        );
+        $data[] = array(
+            "url" => "/distrik/detail?v=" . Auth::user()->user_id . "&t=2",
+            "name" => "perusahaan",
+            "slug" => "perusahaan",
+            "icon" => "GridIcon",
+        );
+        return $data;
+        // {
+        //     url: "users",
+        //     name: "Users",
+        //     slug: "investasi",
+        //     icon: "UsersIcon",
+        //   },
+        //   {
+        //     url: "page2",
+        //     name: "Infrastruktur",
+        //     slug: "investasi",
+        //     icon: "SlidersIcon",
+        //   },
+        //   {
+        //     url: "page2",
+        //     name: "Investasi",
+        //     slug: "investasi",
+        //     icon: "TrendingUpIcon",
+        //   },
+    }
 }

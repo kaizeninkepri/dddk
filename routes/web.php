@@ -14,6 +14,7 @@ Auth::routes();
 Route::get('/pages/login', 'ApplicationController');
 Route::get('/auth/logout', 'ApplicationController@logoutS');
 Route::post('/login/submit', 'ApplicationController@SubmitLogin');
+Route::get('/menu', 'ApplicationController@menu');
 Route::middleware(['auth'])->group(function () {
     Route::get('/{any}', 'ApplicationController')->where('any', '.*');
 });
