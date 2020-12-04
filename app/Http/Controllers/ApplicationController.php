@@ -35,12 +35,22 @@ class ApplicationController extends Controller
 
     public function menu(Request $r)
     {
-        $data[] = array(
-            "url" => "/",
-            "name" => "Dashboard",
-            "slug" => "home",
-            "icon" => "HomeIcon",
-        );
+        if (Auth::user()->user_id == 0) {
+            $data[] = array(
+                "url" => "/",
+                "name" => "Dashboard",
+                "slug" => "home",
+                "icon" => "HomeIcon",
+            );
+        } else {
+            $data[] = array(
+                "url" => "/dashboard?v=" . Auth::user()->user_id,
+                "name" => "Dashboard",
+                "slug" => "home",
+                "icon" => "HomeIcon",
+            );
+        }
+        
 
         $data[] = array(
             "url" => "users",
